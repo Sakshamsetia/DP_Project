@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Radiology Report Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .drag-area {
+            transition: all 0.3s ease;
+        }
+        .drag-area.active {
+            border: 2px dashed #3b82f6;
+            background-color: #f0f7ff;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <header class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">AI Radiology Report Generator</h1>
+            <p class="text-gray-600">Upload medical images to generate detailed radiology reports</p>
+        </header>
+
+        <main class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div id="app" class="p-6">
+                <!-- App content will be rendered here by JavaScript -->
+            </div>
+        </main>
+
+        <footer class="text-center mt-8 text-gray-500 text-sm">
+            <p>AI Radiology Assistant • Secure • HIPAA Compliant</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
